@@ -4,9 +4,7 @@ function mzlleFlo_custom_header_setup()
 {
     $header_args = array(
         'flex-height' => true,
-        // 'height' => 288,
         'flex-width' => true,
-        //'width' => 560,
         'default-image' => get_template_directory_uri() . '/images/logo6_medium.gif',
     );
     add_theme_support('custom-header', $header_args);
