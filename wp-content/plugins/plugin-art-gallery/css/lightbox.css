@@ -1,0 +1,231 @@
+/* Variables CSS pour les couleurs et les dimensions récurrentes */
+:root {
+  --overlay-bg-color: black;
+  --overlay-opacity: 0.8;
+  --lightbox-bg-color: white;
+  --lightbox-border-color: white;
+  --lightbox-border-radius: 4px;
+  --lightbox-z-index: 10000;
+  --loader-bg-image: url(../images/loading.gif);
+  --prev-bg-image: url(../images/prev.png);
+  --next-bg-image: url(../images/next.png);
+  --close-bg-image: url(../images/close.png);
+}
+
+/* Désactiver le défilement du corps lorsque le lightbox est actif */
+body.lb-disable-scrolling {
+  overflow: hidden;
+}
+
+/* Overlay du lightbox */
+.lightboxOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  background-color: var(--overlay-bg-color);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: var(--overlay-opacity);
+  display: none;
+}
+
+/* Conteneur principal du lightbox */
+.lightbox {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  z-index: var(--lightbox-z-index);
+  text-align: center;
+  line-height: 0;
+  font-weight: normal;
+  outline: none;
+}
+
+/* Image dans le lightbox */
+.lightbox .lb-image {
+  display: block;
+  height: auto;
+  max-width: inherit;
+  max-height: none;
+  border-radius: var(--lightbox-border-radius);
+  border: 4px solid var(--lightbox-border-color);
+}
+
+/* Supprimer la bordure des images dans les liens */
+.lightbox a img {
+  border: none;
+}
+
+/* Conteneur extérieur du lightbox */
+.lb-outerContainer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+  margin: 0 auto;
+  border-radius: var(--lightbox-border-radius);
+  background-color: var(--lightbox-bg-color);
+}
+
+/* Clearfix pour le conteneur extérieur */
+.lb-outerContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Chargement du lightbox */
+.lb-loader {
+  position: absolute;
+  top: 43%;
+  left: 0;
+  height: 25%;
+  width: 100%;
+  text-align: center;
+  line-height: 0;
+}
+
+/* Annuler le chargement */
+.lb-cancel {
+  display: block;
+  width: 32px;
+  height: 32px;
+  margin: 0 auto;
+  background: var(--loader-bg-image) no-repeat;
+}
+
+/* Navigation du lightbox */
+.lb-nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 10;
+}
+
+.lb-container>.nav {
+  left: 0;
+}
+
+.lb-nav a {
+  outline: none;
+  background-image: url('data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==');
+}
+
+/* Bouton précédent */
+.lb-prev,
+.lb-next {
+  height: 100%;
+  cursor: pointer;
+  display: block;
+}
+
+.lb-nav a.lb-prev {
+  width: 34%;
+  left: 0;
+  float: left;
+  background: var(--prev-bg-image) left 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-prev:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Bouton suivant */
+.lb-nav a.lb-next {
+  width: 64%;
+  right: 0;
+  float: right;
+  background: var(--next-bg-image) right 48% no-repeat;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  -webkit-transition: opacity 0.6s;
+  -moz-transition: opacity 0.6s;
+  -o-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+}
+
+.lb-nav a.lb-next:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}
+
+/* Conteneur de données du lightbox */
+.lb-dataContainer {
+  margin: 0 auto;
+  padding-top: 5px;
+  width: 100%;
+  border-bottom-left-radius: var(--lightbox-border-radius);
+  border-bottom-right-radius: var(--lightbox-border-radius);
+}
+
+/* Clearfix pour le conteneur de données */
+.lb-dataContainer:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Données du lightbox */
+.lb-data {
+  padding: 0 4px;
+  color: #ccc;
+}
+
+/* Détails du lightbox */
+.lb-data .lb-details {
+  width: 85%;
+  float: left;
+  text-align: left;
+  line-height: 1.1em;
+}
+
+/* Légende du lightbox */
+.lb-data .lb-caption {
+  font-size: 13px;
+  font-weight: bold;
+  line-height: 1em;
+}
+
+.lb-data .lb-caption a {
+  color: #4ae;
+}
+
+/* Numéro du lightbox */
+.lb-data .lb-number {
+  display: block;
+  clear: left;
+  padding-bottom: 1em;
+  font-size: 12px;
+  color: #999999;
+}
+
+/* Bouton de fermeture du lightbox */
+.lb-data .lb-close {
+  display: block;
+  float: right;
+  width: 30px;
+  height: 30px;
+  background: var(--close-bg-image) top right no-repeat;
+  text-align: right;
+  outline: none;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+  opacity: 0.7;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  -o-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.lb-data .lb-close:hover {
+  cursor: pointer;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+  opacity: 1;
+}

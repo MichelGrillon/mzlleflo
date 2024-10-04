@@ -1,0 +1,87 @@
+/* Styles pour le bloc Archives des Créations */
+.wp-block-art-gallery-artwork-archives {
+    margin: 0 0 2em;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-art-gallery-artwork-archives ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-art-gallery-artwork-archives li {
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+.wp-block-art-gallery-artwork-archives a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.wp-block-art-gallery-artwork-archives a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le bloc Catégories d'Art */
+.wp-block-art-gallery-art-categories {
+    margin: 0 0 2em;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-art-gallery-art-categories ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.wp-block-art-gallery-art-categories li {
+    margin: 0 0 0.5em;
+    padding: 0;
+}
+
+.wp-block-art-gallery-art-categories a {
+    text-decoration: none;
+    color: #0073aa;
+}
+
+.wp-block-art-gallery-art-categories a:hover {
+    text-decoration: underline;
+}
+
+/* Styles pour le bloc Derniers Artworks */
+.wp-block-art-gallery-latest-artworks {
+    margin: 0 0 2em;
+    padding: 0;
+}
+
+.wp-block-art-gallery-latest-artworks .artwork-preview {
+    margin-bottom: 2em;
+}
+
+.wp-block-art-gallery-latest-artworks img {
+    max-width: 100%;
+    height: auto;
+}
+
+.wp-block-art-gallery-latest-artworks h2 {
+    margin: 0.5em 0;
+}
+
+.wp-block-art-gallery-latest-artworks p {
+    margin: 0;
+}
+
+/* Styles pour la mise en page horizontale */
+.wp-block-art-gallery-latest-artworks.horizontal .artwork-preview {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 2em;
+}
+
+.wp-block-art-gallery-latest-artworks.horizontal .artwork-preview:last-child {
+    margin-right: 0;
+}

@@ -1,0 +1,1009 @@
+/*
+Theme name: MZLLeFlo Thème
+Theme URI: http: //example.com/
+Author: M'ZLLe Flo et Michel Grillon
+Author URI: https://www.facebook.com/mzlleflo.deco
+Description: Thème pour MZLLeFlo avec menu déroulant, deux zones de widgets, une à droite et une en bas. Style épuré et artistique.
+Version: 1.0
+License: GNU General Public License v2 or later License URI: http: //www.gnu.org/licenses/gpl-2.0.html
+License URI: http: //www.gnu.org/licenses/gpl-2.0.html
+Tags: light, two-columns, responsive-layout, etc.
+Text Domain: mzlleflo
+*/
+
+/*======================================================================================================================================*/
+
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Send+Flowers&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playwrite+NO:wght@100..400&display=swap');
+
+/* Style pour la police Great Vibes */
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Style pour la police Send Flowers */
+.send-flowers-regular {
+    font-family: "Send Flowers", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Style pour la police Playwrite NO */
+.playwrite-no {
+    font-family: "Playwrite NO", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.button.product_type_simple.add_to_cart_button.ajax_add_to_cart,
+button.product_type_simple.add_to_cart_button.ajax_add_to_cart.loading,
+button.product_type_variable.add_to_cart_button,
+a.button.product_type_variable.add_to_cart_button,
+button.product_type_external,
+button.product_type_grouped,
+li#tab-title-description.description_tab.active,
+li#tab-title-additional_information.additional_information_tab,
+ li#tab-title-reviews.reviews_tab,
+ button.single_add_to_cart_button.button.alt,
+ .woocommerce a.remove,
+ p.woocommerce-store-notice.demo_store{
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold !important;
+    font-size: 0.8rem !important;
+    background-color: #E9E6ED;
+    /*background-color: #DCD7E3;*/
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    word-break: break-word;
+    white-space: normal;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.wc-block-grid__product-add-to-cart.wp-block-button .wp-block-button__link,
+.button.product_type_simple.add_to_cart_button.ajax_add_to_cart,
+button.product_type_simple.add_to_cart_button.ajax_add_to_cart.loading,
+button.product_type_variable.add_to_cart_button,
+button.product_type_external,
+button.product_type_grouped,
+li#tab-title-description.description_tab.active,
+li#tab-title-additional_information.additional_information_tab,
+li#tab-title-reviews.reviews_tab,
+button.single_add_to_cart_button.button.alt,
+p.woocommerce-store-notice.demo_store:hover {
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold !important;
+    font-size: 0.8rem !important;
+    background-color: #DCD7E3;
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    word-break: break-word;
+    white-space: normal;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    display: inline-flex;
+    justify-content: center;
+    text-align: center;
+}
+
+        /*============================================================*/
+
+/* Style pour le corps de la page */
+body {
+    max-width: 80%;
+    margin: auto;
+}
+
+/* Style pour les images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour les images mises en avant */
+.post-thumbnail img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour les images dans le contenu */
+.entry-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style pour le titre */
+title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* Style pour les titres de niveau 1 */
+h1 {
+    font-family: "Great Vibes", cursive;
+    color: black;
+}
+
+/* Style pour les titres de niveau 2 à 6 */
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: black;
+    font-family: "Send Flowers", cursive;
+}
+
+/* Style pour les liens */
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Style pour le conteneur principal */
+#wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* Style pour le titre de la catégorie */
+.category-title {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/*============================================================*/
+
+/* Style pour l'en-tête */
+header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style pour les liens dans l'en-tête */
+header a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+    max-width: 100%;
+    text-decoration: none;
+}
+
+/* Style pour le logo */
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* Style pour l'image du logo */
+#logo img {
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+/* Style pour le titre du site */
+#titre {
+    width: 100%;
+    text-align: center;
+}
+
+/* Style pour le menu principal */
+#menuPrincipal {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Style pour le menu principal */
+#menuPrincipal #main-menu {
+    display: inline-block;
+}
+
+/* Style pour l'en-tête du site */
+#site-header {
+    margin-bottom: 0.5em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style pour les liens dans l'en-tête du site */
+#site-header a {
+    display: flex;
+    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
+    min-width: 50%;
+}
+
+/* Style pour le conteneur de recherche */
+#recherche {
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* Déplace l'icône en dessous du menu */
+    margin-top: 10px;
+    width: 100%;
+    /* Aligne l'icône à l'extrême droite */
+    justify-content: flex-end;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        /* Optionnel : pour une ombre portée */
+}
+
+/* Style pour le champ de recherche */
+#searchform {
+    display: none;
+    position: absolute;
+    /* Positionne le champ de recherche à gauche de l'icône */
+    right: 100%;
+    top: 0;
+    transition: right 0.3s ease;
+    /* Empêche le texte de se déplacer sur une nouvelle ligne */
+    white-space: nowrap;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        /* Optionnel : pour une ombre portée */
+}
+
+/* Style pour le champ de recherche */
+#recherche input {
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 2em;
+    border: none;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        /* Optionnel : pour une ombre portée */
+}
+
+/* Style pour afficher le champ de recherche visible */
+#searchform.visible {
+    display: block;
+    right: 0;
+}
+
+/* Style pour le premier champ de recherche */
+#recherche input:first-of-type {
+    color: #ccc;
+}
+
+/* Style pour cacher le label du formulaire de recherche */
+#searchform label {
+    display: none;
+}
+
+/* Style pour l'icône de recherche */
+.search-icon {
+    cursor: pointer;
+    margin-left: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+/* Style pour le menu */
+nav#menuPrincipal {
+    margin-bottom: 1em;
+    padding-left: 0.5em;
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold;
+}
+
+/* Style pour les listes dans le menu */
+nav#menuPrincipal ul {
+    list-style-type: none;
+    padding: 0;
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+/* Style pour les éléments de liste dans le menu */
+nav#menuPrincipal ul li {
+    display: block;
+    margin-bottom: .5em;
+    position: relative;
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold;
+}
+
+/* Style pour les liens dans les éléments de liste du menu */
+nav#menuPrincipal ul li a {
+    display: block;
+    text-decoration: none;
+    font-family: "Playwrite NO", cursive;
+    font-weight: bold;;
+    background-color: #fff;
+    color: black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+        /* Optionnel : pour une ombre portée */
+    padding: 0.5em 1em;
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Style pour les sous-menus */
+nav#menuPrincipal ul li ul li {
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid transparent;
+    padding: 0;
+}
+
+/* Style pour les liens dans les sous-menus */
+nav#menuPrincipal ul li ul li a {
+    padding: 0.5em 0;
+}
+
+/* Style pour les sous-menus */
+nav#menuPrincipal ul li ul {
+    /* Masquer les sous-menus par défaut */
+    display: none;
+    /* Positionner absolument pour apparaître en dessous du menu principal */
+    position: absolute;
+    left: 0;
+    /* Placer le sous-menu juste en dessous du menu principal */
+    top: 100%;
+    /* Assurer que le sous-menu est au-dessus des autres éléments */
+    z-index: 1000;
+    flex-direction: column;
+    text-align: center;
+    list-style-type: none;
+    padding: 0.05em;
+}
+
+/* Style pour les sous-menus au survol */
+nav#menuPrincipal ul li:hover>ul {
+    display: block;
+}
+
+/* Cache les sous-menus par défaut */
+ul.sub-menu {
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    width: 4.2em;
+    text-align: center;
+    list-style-type: none;
+        
+}
+
+/* Affiche le sous-menu au survol du parent */
+li.menu-item:hover>ul.sub-menu {
+    display: block;
+}
+
+/* Optionnel : Assure que le sous-menu reste visible lorsqu'il est survolé */
+li.menu-item ul.sub-menu:hover {
+    display: block;
+}
+
+/* Style pour l'icône du menu mobile */
+#mobile-menu-icon {
+    display: none;
+    cursor: pointer;
+    font-size: 1.5em;
+    position: absolute;
+    top: 5px;
+    right:0;
+}
+
+/* Style pour l'icône du menu mobile */
+#mobile-menu-icon i {
+    color: #000;
+}
+
+/* Style pour le menu principal ouvert */
+#menuPrincipal.open {
+    display: block;
+    justify-content: right;
+    width: 50%;
+    position: absolute;
+    top: 5px;
+    right: 0;
+    background-color: #fff;
+    color: #000000;
+    z-index: 1000;
+    opacity: 0.9;
+    transition: opacity 1s ease-in-out;
+    /* Ombre légère */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour le bouton de basculement du menu */
+.toggle-nav {
+    display: none !important;
+}
+
+/* Style pour la gestion des sous-menus en version mobile à la place du hover  */
+nav#menuPrincipal ul li ul.show {
+    display: block;
+}
+/* Style pour les sous-menus actifs */
+nav#menuPrincipal ul li ul.active {
+    display: block;
+}
+
+/*============================================================*/
+
+/* Style pour le contenu principal */
+/*main {
+    display: flex;
+    justify-content: space-between;*/
+    /*flex-direction: column;*/
+    /*font-family: "Playwrite NO", cursive;
+}*/
+
+/* Style pour la section haute */
+/*.haut {
+    padding: 0.5em;
+    min-height: 200px;
+    margin-bottom: 1em;
+    width: 100%;
+}*/
+
+/* Style pour les informations */
+/*.infos {
+    font-style: italic;
+}*/
+
+/* Style pour les colonnes de widgets */
+/*#colonneDroite,
+#colonneGauche {
+    min-height: 200px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}*/
+
+/* Style pour les div dans les colonnes de widgets */
+/*#colonneDroite div,
+#colonneGauche div {
+    margin-bottom: 3em;
+}*/
+
+/* Style pour les listes dans les colonnes de widgets */
+/*#colonneDroite ul,
+#colonneGauche ul {
+    list-style-type: none;
+}*/
+
+/* Style pour le contenu principal */
+body.main-container main {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Playwrite NO", cursive;
+}
+
+/* Style pour le main interne qui contient les articles */
+body.main-container main#main {
+    display: block;
+    /* Assurez-vous que les articles sont affichés en colonne */
+}
+
+/* Style pour la section haute */
+.haut {
+    padding: 0.5em;
+    min-height: 200px;
+    margin-bottom: 1em;
+    width: 100%;
+}
+
+/* Style pour les informations */
+.infos {
+    font-style: italic;
+}
+
+/* Style pour les colonnes de widgets */
+#colonneDroite,
+#colonneGauche {
+    min-height: 200px;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+/* Style pour les div dans les colonnes de widgets */
+#colonneDroite div,
+#colonneGauche div {
+    margin-bottom: 3em;
+}
+
+/* Style pour les listes dans les colonnes de widgets */
+#colonneDroite ul,
+#colonneGauche ul {
+    list-style-type: none;
+}
+
+/*============================================================*/
+
+/* Style pour la section basse */
+#bas {
+    padding: 0.5em;
+    margin-bottom: 1em;
+    display: flex;
+}
+
+/* Style pour les widgets en bas */
+.widget-bas {
+    margin-left: 2em;
+    min-width: 200px;
+}
+
+/* Style pour le pied de page */
+footer {
+    padding: 0.5em;
+}
+
+/* Style pour le menu du pied de page */
+footer ul {
+    list-style-type: none;
+    margin-bottom: 0.5em;
+    text-align: center;
+    font-family: "Playwrite NO", cursive;
+    font-size: 0.7em;
+}
+
+/* Style pour les éléments de liste dans le menu du pied de page */
+footer ul li {
+    display: inline-block;
+}
+
+/* Style pour les éléments de liste dans le menu du pied de page, sauf le premier */
+footer ul li:not(:first-of-type) {
+    margin-left: 0.5em;
+}
+
+/* Style pour le copyright */
+#copyright {
+    text-align: center;
+    font-family: "Playwrite NO", cursive;
+    font-size: 0.7em;
+}
+
+/* Style pour les informations du pied de page */
+#footer_info {
+    display: flex;
+    justify-content: space-between;
+    font-family: "Playwrite NO", cursive;
+    font-size: 0.7em;
+}
+
+/* Style pour la partie droite du pied de page */
+#footer_right {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/* Style pour les div dans la partie droite du pied de page */
+#footer_right div {
+    margin-left: 15px;
+}
+
+/* Style pour les icônes dans la partie droite du pied de page */
+#footer_right i {
+    font-size: 2.5em;
+}
+
+/* Style pour le bouton de basculement du menu */
+.toggle-nav {
+    display: none !important;
+}
+
+/* Styles pour le bouton de retour en haut de page */
+/* Flèche pour le retour vers le haut de la page */
+.fleche-hdpage i {
+    /* Masqué par défaut */
+    /*display: none;*/
+    font-size: 1.875em;
+    position: fixed;
+    /* Position en bas */
+    bottom: 1.875em;
+    /* Position à droite */
+    right: 1.875em;
+    /* Couleur de fond */
+    background: #0a0a0a;
+    /* Couleur du texte */
+    color: white;
+    /* Padding pour augmenter la taille cliquable */
+    padding: 10px;
+    /* Bordures arrondies pour une forme circulaire */
+    border-radius: 50%;
+    /* Curseur en forme de pointeur */
+    cursor: pointer;
+    /* Assure que le bouton est au-dessus des autres éléments */
+    z-index: 1000;
+    opacity: 0.5;
+    transition: opacity 1s ease-in-out;
+    /* Ombre légère */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    
+    /* Empêche le bouton d'affecter la largeur totale de la page */
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Style pour la carte */
+#map {
+    height: 400px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+/* Styles pour la galerie d'art */
+.art-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Style pour les éléments de la galerie d'art */
+.art-gallery-item {
+    flex: 1 1 calc(33.333% - 20px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Style pour les éléments de la galerie d'art au survol */
+.art-gallery-item:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Style pour les images dans les éléments de la galerie d'art */
+.art-gallery-item img {
+    width: 100%;
+    height: auto;
+}
+
+/* Style pour les titres dans les éléments de la galerie d'art */
+.art-gallery-item h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Style pour les paragraphes dans les éléments de la galerie d'art */
+.art-gallery-item p {
+    text-align: center;
+}
+
+/* Style pour les filtres de la galerie d'art */
+.art-gallery-filters {
+    margin-bottom: 20px;
+}
+
+/* Style pour le conteneur du bouton de chargement de plus de contenu */
+.load-more-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Style pour le bouton de chargement de plus de contenu */
+#load-more {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/*======================================================================================================================================*/
+
+/* Styles pour les écrans de largeur minimale de 480px et maximale de 768px */
+@media screen and (min-width: 480px) and (max-width: 768px) {
+
+    /* Style pour le corps de la page */
+    body {
+        max-width: 100%;
+        /* Largeur maximale de 80% */
+        margin: auto;
+        /* Centré horizontalement */
+    }
+
+    /* Style pour les sections avec une barre latérale */
+    .avecAside {
+        width: 70%;
+        /* Largeur de 70% */
+    }
+
+    /* Style pour les colonnes de widgets */
+    #colonneDroite,
+    #colonneGauche {
+        width: 30%;
+        /* Largeur de 30% */
+    }
+
+    /* Style pour le champ de recherche */
+    #recherche {
+        display: block;
+        /* Affiché en bloc */
+    }
+
+    /* Style pour les éléments de liste dans le menu principal */
+    nav#menuPrincipal ul li {
+        display: inline-block;
+        /* Affiché en ligne */
+    }
+}
+/*======================================================================================================================================*/
+
+/* Styles pour les écrans de largeur maximale de 768px */
+@media screen and (max-width: 768px) {
+
+    /* Style pour le corps de la page */
+    body {
+        max-width: 100%;
+        margin: auto;
+    }
+
+    /* Style pour le main principal */
+    body.main-container main {
+        display: block;
+        flex-direction: column;
+    }
+
+    /* Style pour le main interne qui contient les articles */
+    body.main-container main#main {
+        display: block;
+        width: 100%;
+    }
+
+    /* Style pour les colonnes de widgets */
+    #colonneDroite,
+    #colonneGauche {
+        width: 100%;
+        margin-top: 20px;
+        /* Ajoutez un espace entre les articles et la sidebar */
+    }
+
+    /* Style pour le pied de page */
+    footer {
+        padding: 0.5em;
+        text-align: center;
+    }
+
+    /* Style pour l'élément <aside id="bas"> */
+    aside#bas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    /* Style pour les widgets en bas */
+    .widget-bas {
+        margin-left: 0;
+        min-width: 100%;
+        display: block;
+        margin-bottom: 1em;
+    }
+
+    /* Style pour le menu du pied de page */
+    footer ul {
+        list-style-type: none;
+        margin-bottom: 0.5em;
+        text-align: center;
+        font-family: "Playwrite NO", cursive;
+        font-size: 0.7em;
+    }
+
+    /* Style pour les éléments de liste dans le menu du pied de page */
+    footer ul li {
+        display: block;
+        margin-bottom: 0.5em;
+    }
+
+    /* Style pour le copyright */
+    #copyright {
+        text-align: center;
+        font-family: "Playwrite NO", cursive;
+        font-size: 0.7em;
+    }
+
+    /* Style pour les informations du pied de page */
+    #footer_info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: "Playwrite NO", cursive;
+        font-size: 0.7em;
+    }
+
+    /* Style pour la partie droite du pied de page */
+    #footer_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Style pour les div dans la partie droite du pied de page */
+    #footer_right div {
+        margin-left: 0;
+        margin-bottom: 0.5em;
+    }
+
+    /* Style pour les icônes dans la partie droite du pied de page */
+    #footer_right i {
+        font-size: 2.5em;
+    }
+
+    /* Style pour l'affichage des produits WooCommerce */
+    .woocommerce-products-main {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+        margin-left: 5px;
+    }
+
+    /* Style pour le bouton de basculement du menu */
+    .toggle-nav {
+        top: 10px;
+        padding: 5px;
+        margin: 5px;
+        display: inline-block !important;
+        color: #000000;
+        color: #fff;
+        transition: color linear 0.15s;
+    }
+
+    /* Style pour le bouton de basculement du menu au survol et actif */
+    .toggle-nav:hover,
+    .toggle-nav.active {
+        text-decoration: none;
+        color: #000000;
+    }
+
+    /* Style pour l'icône du menu mobile */
+    #mobile-menu-icon {
+        display: block;
+    }
+
+    /* Style pour le menu principal */
+    #menuPrincipal {
+        display: none;
+    }
+
+    /* Style pour le menu principal ouvert */
+    #menuPrincipal.open {
+        display: block;
+        justify-content: right;
+        width: 50%;
+        position: absolute;
+        top: 70px;
+        margin-right: 0px;
+        margin-left: 30px;
+        background-color: #fff;
+        color: #000000;
+        z-index: 1000;
+        opacity: 0.9;
+        transition: opacity 1s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style pour le menu */
+    nav#menuPrincipal {
+        margin-bottom: 1em;
+        padding-left: 0.5em;
+    }
+
+    /* Style pour les listes dans le menu */
+    nav#menuPrincipal ul {
+        flex-direction: column;
+        list-style-type: none;
+        padding: 0;
+        display: none;
+    }
+
+    /* Style pour les éléments de liste dans le menu */
+    nav#menuPrincipal ul li {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        margin-bottom: .5em;
+        position: relative;
+    }
+
+    /* Style pour les liens dans les éléments de liste du menu */
+    nav#menuPrincipal ul li a {
+        display: block;
+        text-decoration: none;
+        background-color: #fff;
+        color: #000000;
+        padding: 0.5em 1em;
+        border-radius: 10px;
+        text-align: center;
+        opacity: 0.9;
+        transition: opacity 1s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style pour les sous-menus */
+    nav#menuPrincipal ul li ul li {
+        display: block;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid transparent;
+        padding: 0;
+        z-index: 1000;
+        opacity: 0.9;
+        transition: opacity 1s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style pour les liens dans les sous-menus */
+    nav#menuPrincipal ul li ul li a {
+        padding: 0.5em 0;
+    }
+
+    /* Style pour les sous-menus */
+    nav#menuPrincipal ul li ul {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        z-index: 1000;
+        display: none;
+        opacity: 0.9;
+        transition: opacity 1s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Style pour les sous-menus au survol */
+    /* nav#menuPrincipal ul li:hover>ul {
+        display: block;
+    } */
+
+    /* Par exemple, changer le comportement du sous-menu pour les écrans mobiles */
+    ul.sub-menu {
+        display: none;
+        position: static;
+        background-color: #fff;
+        z-index: 1000;
+        opacity: 0.5;
+        transition: opacity 1s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Afficher les sous-menus lorsqu'ils sont activés via JavaScript */
+    .menu-item.active>ul.sub-menu {
+        display: block;
+    }
+
+    /* Gestion de l'ouverture du sous-menu via un bouton sur mobile */
+    .menu-item>a {
+        cursor: pointer;
+    }
+}
+
+/*======================================================================================================================================*/
+/* Styles pour les écrans de bureau (largeur minimale de 769px) */
+@media screen and (min-width: 769px) {
+    /* Style pour les éléments de liste dans le menu principal */
+    nav#menuPrincipal ul li {
+        display: inline-block;
+        /* Affiché en ligne */
+    }
+}
